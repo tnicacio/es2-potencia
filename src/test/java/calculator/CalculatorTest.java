@@ -51,7 +51,6 @@ public class CalculatorTest {
         assertEquals(1, result);
     }
 
-
     @Test
     void potenciaShouldReturnAPositiveNumberWhenBaseIsNegativeAndExponentIsEven() {
         double result = calculator.potencia(-2, 4);
