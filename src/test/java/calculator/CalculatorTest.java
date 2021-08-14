@@ -3,6 +3,7 @@ package calculator;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -64,14 +65,14 @@ public class CalculatorTest {
     }
 
     @Test
-    void potenciaShouldReturnANumberGreaterThanZeroAndLessThanOneWhenBaseIsNotZeroAndExponentIsNegative() {
+    void potenciaShouldReturnANumberGreaterThanZeroAndLessThanOneWhenBaseModulusIsGreaterThanOneAndExponentIsNegative() {
         double result = calculator.potencia(2, -2);
         assertTrue(result > 0);
         assertTrue(result < 1);
     }
 
     @Test
-    void potenciaShouldReturnANumberGreaterThanOneWhenBaseIsNotZeroAndExponentIsGreaterThanOne() {
+    void potenciaShouldReturnANumberGreaterThanOneWhenBaseBaseModulusIsGreaterThanOneAndExponentIsGreaterThanOne() {
         double result = calculator.potencia(2, 3);
         assertTrue(result > 1);
     }
