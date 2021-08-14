@@ -71,7 +71,7 @@ public class CalculatorTest {
     }
 
     @Test
-    void potenciaShouldReturnANumberGreaterThanOneWhenBaseBaseModulusIsGreaterThanOneAndExponentIsGreaterThanOne() {
+    void potenciaShouldReturnANumberGreaterThanOneWhenBaseModulusIsGreaterThanOneAndExponentIsGreaterThanOne() {
         double result = calculator.potencia(2, 3);
         assertTrue(result > 1);
     }
